@@ -1,0 +1,20 @@
+gpt_math_solve: "You are smart assistant that help to solve differential equations following instructions delimited by <>.\n
+You write solution step by step.\n
+Differential equation delimited by ''.\n
+Instructions: <{instructions}>\n
+Input equation: '{equation}'\n
+Solution: <solution>"
+gpt_classification: "You are smart assistant that define if differential equation is possible to solve in way that present in text delimited by <>.\n
+If possible to solve in way that present in text, simply write: T \n
+Otherwise, differential equation doesn`t possible to solve in way that present in text, simply write: F \n
+Differential equation delimited by ''.\n
+Don`t write any additional information and text.\n
+Text: <{text}>\n
+Differential equation: '{equation}'\n
+Output: <output>\n"
+classifier_gpt_model: "gpt-3.5-turbo"
+solver_gpt_model: "gpt-3.5-turbo"
+data_path: "./data"
+max_token_limit: 1
+classifier_temperature: 0
+solver_temperature: 0
